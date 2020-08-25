@@ -3,11 +3,10 @@ package project.logic.model;
 public class User {
     private String fName;
     // TODO : RQ - 1
-    private int age;
     private String lName;
     private Address address;
     private Double salary;
-    private String bdate;
+    private String bdate; // added new variable for getting birthdate.
 
     public String getfName() {
         return fName;
@@ -15,14 +14,6 @@ public class User {
 
     public void setfName(String fName) {
         this.fName = fName;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
     }
 
     public String getlName() {
@@ -61,8 +52,7 @@ public class User {
     public String toString() {
         return "User{" +
                 "fName='" + fName + '\'' +
-                ", age=" + age +
-                ", birth date format(dd/mm/yyyy)=" + bdate+
+                ", birth date format(dd/mm/yyyy)=" + bdate+    // showing birth date
                 ", lName='" + lName + '\'' +
                 ", address=" + address +
                 ", salary=" + salary +
